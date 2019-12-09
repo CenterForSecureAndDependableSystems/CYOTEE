@@ -6,7 +6,7 @@ sudo dpkg --configure -a
 sudo apt-get install git -y;
 
 #remove existing repo and clone git repo
-sudo rm -r CDCTE2
+sudo rm -r CYOTEE
 sudo git clone https://github.com/CenterForSecureAndDependableSystems/CYOTEE.git
 
 #install MySQL 

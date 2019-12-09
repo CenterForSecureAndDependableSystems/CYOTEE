@@ -5,7 +5,7 @@ sudo dpkg --configure -a
 sudo apt-get install git -y
 sudo apt-get install openssh-server openssh-client -y
 sudo service ssh start
-sudo git clone https://github.com/nabab47/CDCTE2.git
+sudo git clone https://github.com/CenterForSecureAndDependableSystems/CYOTEE.git
 
 #create users
 useradd redteam
@@ -18,7 +18,7 @@ sudo echo -e "guest\nguest" | passwd guest
 #disable auto-updates
 sudo rm /etc/apt/apt.conf.d/20-auto-upgrades
 sudo rm /etc/apt/apt.conf.d/20auto-upgrades
-sudo cp CDCTE2/Thesis/Code/Linux/20-auto-upgrades /etc/apt/apt.conf.d/20-auto-upgrades
+sudo cp CYOTEE/CYOTEE_Code_Linux/20-auto-upgrades /etc/apt/apt.conf.d/20-auto-upgrades
 
 #add a couple of cron jobs
 

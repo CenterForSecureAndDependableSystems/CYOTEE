@@ -3,7 +3,7 @@
 #grab the github repo
 sudo apt-get remove git*
 sudo apt-get purge git*
-sudo rm -r CDCTE2
+sudo rm -r CYOTEE
 
 #install nginx
 sudo apt-get remove nginx*

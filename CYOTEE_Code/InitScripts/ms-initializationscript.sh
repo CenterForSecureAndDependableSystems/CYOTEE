@@ -7,7 +7,7 @@ sudo apt-get install git -y;
 
 #remove existing repo and clone git repo
 sudo rm -r CDCTE2
-sudo git clone https://github.com/nabab47/CDCTE2.git
+sudo git clone https://github.com/CenterForSecureAndDependableSystems/CYOTEE.git
 
 #install MySQL 
 sudo apt-get install -y mysql-server;
@@ -30,4 +30,4 @@ sudo mysql -u root -e "CREATE DATABASE vulndb";
 sudo mysql -u root -e "GRANT ALL PRIVILEGES ON vulndb.* TO 'root'@'localhost'";
 
 #import vulndb sql file
-sudo mysql -u root vulndb < CDCTE2/Thesis/Code/MySQL/vulndb.sql;
+sudo mysql -u root vulndb < CYOTEE/CYOTEE_Code/SQL/vulndb.sql;

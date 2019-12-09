@@ -7,7 +7,7 @@ sudo apt-get remove openssh-server* openssh-client*
 sudo apt-get purge openssh-server* openssh-client*
 
 #remove github repo
-sudo rm -r CDCTE2
+sudo rm -r CYOTEE
 
 #create users
 sudo userdel redteam

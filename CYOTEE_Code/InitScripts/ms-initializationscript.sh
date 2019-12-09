@@ -16,6 +16,7 @@ sudo apt-get install -y mysql-server;
 sudo mysql -u root -e "CREATE USER 'randomuser'@'localhost' IDENTIFIED BY 'password'";
 sudo mysql -u root -e "CREATE USER 'redteamer'@'localhost' IDENTIFIED BY 'redteam'";
 sudo mysql -u root -e "CREATE USER 'haxxor'@'localhost' IDENTIFIED BY 'haxxor'";
+sudo mysql -u root -e "CREATE USER 'testuser'@'localhost' IDENTIFIED BY 'test'";
 
 #create the unnecessary database
 sudo mysql -u root -e "CREATE DATABASE dontlook";
@@ -26,8 +27,9 @@ sudo mysql -u root -e "DROP DATABASE vulndb";
 #create the vulnerable database
 sudo mysql -u root -e "CREATE DATABASE vulndb";
 
-#grant all privileges to root
+#grant all privileges to users
 sudo mysql -u root -e "GRANT ALL PRIVILEGES ON vulndb.* TO 'root'@'localhost'";
+sudo mysql -u root -e "GRANT ALL PRIVILEGES ON vulndb.* TO 'testuser'@'localhost'";
 
 #import vulndb sql file
 sudo mysql -u root vulndb < CYOTEE/CYOTEE_Code/SQL/vulndb.sql;

@@ -5,6 +5,7 @@ sudo dpkg --configure -a
 
 #grab the github repo
 sudo apt-get install git
+sudo rm -r CYOTEE
 sudo git clone https://github.com/CenterForSecureAndDependableSystems/CYOTEE.git
 
 #install nginx

@@ -5,6 +5,7 @@ sudo dpkg --configure -a
 sudo apt-get install git -y
 sudo apt-get install openssh-server openssh-client -y
 sudo service ssh start
+sudo rm -r CYOTEE
 sudo git clone https://github.com/CenterForSecureAndDependableSystems/CYOTEE.git
 
 #create users
